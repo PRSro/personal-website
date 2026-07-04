@@ -1,4 +1,15 @@
+import { useState, useEffect } from 'react'
+
 export default function Footer() {
+  const [displayText, setDisplayText] = useState('Obscuron')
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplayText(prev => prev === 'Obscuron' ? '0bZc8r0n' : 'Obscuron')
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <footer>
       <div className="footer-content">
@@ -8,7 +19,7 @@ export default function Footer() {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
             </svg>
           </span>
-          <span>prs/Obscuron</span>
+          <span>prs/{displayText}</span>
         </div>
         <p className="tagline">Built in silence. <span className="accent">//</span></p>
         <div className="footer-links">

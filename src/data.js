@@ -10,19 +10,26 @@ export const terminalLines = [
 
 // Typing animation phrases in hero
 export const typingPhrases = [
-  'Cybersecurity Student',
+  'C++ Developer',
+  'Game Developer',
+  'Security Researcher',
+  'Full-Stack Builder',
   'Linux User',
-  'Builder',
-  'Researcher',
   'Automation Enthusiast'
 ]
 
 // Skills section data
 export const skills = [
+  { icon: 'cpp', name: 'C++', desc: 'Qt, SFML, SDL2, CLI' },
+  { icon: 'code', name: 'Python', desc: 'FastAPI, Automation, Crypto' },
+  { icon: 'react', name: 'React', desc: 'Vite, Tailwind, TypeScript' },
+  { icon: 'unity', name: 'Unity', desc: 'C#, Game Mechanics' },
   { icon: 'linux', name: 'Linux', desc: 'Arch BTW' },
   { icon: 'network', name: 'Networking', desc: 'TCP/IP, DNS, VPN' },
-  { icon: 'code', name: 'Python', desc: 'Automation & Security' },
+  { icon: 'database', name: 'Databases', desc: 'PostgreSQL, Prisma' },
+  { icon: 'docker', name: 'DevOps', desc: 'Docker, CI/CD, Linux' },
   { icon: 'shield', name: 'Web Security', desc: 'OWASP Top 10' },
+  { icon: 'gamepad', name: 'Game Dev', desc: 'Unity, SDL2, SFML' },
   { icon: 'cpu', name: 'Automation', desc: 'Scripts & Bots' },
   { icon: 'flag', name: 'CTFs', desc: 'Capture The Flag' },
 ]
@@ -30,45 +37,66 @@ export const skills = [
 // Projects data with categories
 export const projects = [
   {
+    title: 'Obscuron-Crypto-Suite',
+    category: 'Security',
+    desc: 'Comprehensive cryptographic toolkit with 100+ CLI commands and a full Qt6 desktop GUI. Implements classical ciphers, modern crypto (AES, ChaCha20), cryptanalysis tools, RSA attack suite, elliptic curve DLP attacks, TLS analysis, and LSB steganography.',
+    tech: ['C++17', 'Qt6', 'NTL', 'OpenSSL', 'Python'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Shadow Empire: 1800',
+    category: 'Game Dev',
+    desc: 'A Unity-based historical strategy game set in 1800s Europe. Players control secret societies competing for territory and influence through card-based actions on a historically-accurate map.',
+    tech: ['Unity', 'C#', 'Game Design'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'viitor-educat (Obscuron Educational Platform)',
+    category: 'Web App',
+    desc: 'Modern full-stack learning management system with course management, progress tracking, gamification, quizzes, flashcards, forum, and multi-language support.',
+    tech: ['React', 'TypeScript', 'Fastify', 'PostgreSQL', 'Prisma', 'Docker'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'obsCTF Platform',
+    category: 'Security',
+    desc: 'Full-stack Capture The Flag competition platform inspired by CTFd. Supports challenge management, flag submission, JWT auth, leaderboards, hints, first-blood tracking, and role-based access.',
+    tech: ['Python', 'FastAPI', 'React', 'PostgreSQL', 'Docker'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Cpp-Physics-Engine',
+    category: 'Game Dev',
+    desc: '2D physics engine built from scratch with SFML 3.x. Implements rigid body dynamics, AABB collision detection, material system, polygon approximation, and force-based interactions.',
+    tech: ['C++17', 'SFML 3', 'CMake'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Dacia Libera (Umbra Daciei)',
+    category: 'Game Dev',
+    desc: 'A narrative-driven 2D game about conspiracy, ancient mystery, and Romanian folklore. Features scene-based architecture, entity system, dialogue system, and paranoia mechanics.',
+    tech: ['C++17', 'SDL2', 'nlohmann/json', 'CMake'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Calc-Ult',
+    category: 'Tools',
+    desc: 'From-scratch terminal calculator without <cmath>. Implements Newton-Raphson, Taylor series, big-number arithmetic (1000+ digits), 2D geometry, statistics, finance, and unit conversions.',
+    tech: ['C++11/17', 'Makefile'],
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Obscure-Trading Engine',
+    category: 'Tools',
+    desc: 'C++ trading bot engine with Python bridge via pybind11. Includes market data feeds, technical indicators (SMA, MACD, RSI), risk management, and encrypted audit logging.',
+    tech: ['C++17', 'pybind11', 'HMAC-SHA256', 'AES-256-GCM'],
+    link: 'https://github.com/prsro'
+  },
+  {
     title: 'Doomsails: Battle for the Blackbrick',
-    category: 'Game',
-    desc: 'A Roblox naval battle game with custom gameplay mechanics, weapon systems, and player progression. Preparing for deploymeny',
+    category: 'Game Dev',
+    desc: 'A Roblox naval battle game with custom gameplay mechanics, weapon systems, and player progression.',
     tech: ['Lua', 'Roblox Studio', 'Game Design'],
-    link: '-'
-  },
-  {
-    title: 'Obscuron Automation System',
-    category: 'Automation',
-    desc: 'A modular automation framework for task scheduling, system monitoring, and repetitive task handling.',
-    tech: ['Python', 'Linux', 'APIs'],
-    link: 'https://github.com/prsro'
-  },
-  {
-    title: 'Cybersecurity Study Dashboard',
-    category: 'Security',
-    desc: 'An interactive dashboard for tracking CTF progress, study notes, and security research resources.',
-    tech: ['JavaScript', 'HTML/CSS', 'Local Storage'],
-    link: 'https://github.com/prsro'
-  },
-  {
-    title: 'AI Telegram Research Bot',
-    category: 'AI',
-    desc: 'A Telegram bot integrated with AI models for security research, automation, and information gathering.',
-    tech: ['Python', 'Telegram API', 'AI/ML'],
-    link: 'https://github.com/prsro'
-  },
-  {
-    title: 'Network Scanner Tool',
-    category: 'Security',
-    desc: 'A Python-based network reconnaissance tool for discovering hosts and services on local networks.',
-    tech: ['Python', 'Scapy', 'Nmap'],
-    link: 'https://github.com/prsro'
-  },
-  {
-    title: 'Keylogger Defense System',
-    category: 'Security',
-    desc: 'Educational tool for detecting and analyzing keylogging attempts on Windows systems.',
-    tech: ['Python', 'Windows API', 'C++'],
     link: 'https://github.com/prsro'
   },
 ]
@@ -78,34 +106,34 @@ export const labs = [
   {
     title: 'TryHackMe',
     type: 'Platform',
-    desc: 'Completed multiple rooms covering penetration testing, network security, and privilege escalation.',
-    tools: ['Kali Linux', 'Burp Suite', 'Metasploit'],
-    progress: 10,
+    desc: 'Completed rooms covering penetration testing, network security, privilege escalation, and web exploitation.',
+    tools: ['Kali Linux', 'Burp Suite', 'Metasploit', 'Nmap'],
+    progress: 15,
     link: 'https://tryhackme.com'
-  },
-  {
-    title: 'HackTheBox',
-    type: 'Platform',
-    desc: 'Active participant in retired machines and challenges. Focus on CTF-style penetration testing.',
-    tools: ['VPN', 'Various Tools', 'Custom Scripts'],
-    progress: 2,
-    link: 'https://hackthebox.eu'
   },
   {
     title: 'Home Lab',
     type: 'Personal',
-    desc: 'Self-hosted lab environment for testing and learning various security concepts.',
-    tools: ['VirtualBox', 'Docker', 'PfSense', 'ELK Stack'],
+    desc: 'Self-hosted lab environment running Arch Linux with Docker, QEMU/KVM, and various security testing tools.',
+    tools: ['Arch Linux', 'Docker', 'QEMU/KVM', 'Wireshark'],
     progress: 100,
     link: '#'
   },
   {
-    title: 'CTF Competitions',
-    type: 'Competition',
-    desc: 'Participated in various Capture The Flag competitions to sharpen skills.',
-    tools: ['OSWAP', 'Reverse Engineering', 'Cryptography', 'Forensics'],
-    progress: 2,
-    link: '#'
+    title: 'C++ Systems Development',
+    type: 'Focus',
+    desc: 'Active development across multiple C++17 projects: physics engines, cryptographic suites, trading engines, and game development with various frameworks.',
+    tools: ['C++17', 'Qt6', 'SFML', 'SDL2', 'CMake', 'Make'],
+    progress: 85,
+    link: 'https://github.com/prsro'
+  },
+  {
+    title: 'Full-Stack Web Development',
+    type: 'Focus',
+    desc: 'Building modern web applications with React, TypeScript, Fastify/Node.js, PostgreSQL, and Docker deployment.',
+    tools: ['React', 'TypeScript', 'Fastify', 'PostgreSQL', 'Docker'],
+    progress: 60,
+    link: 'https://github.com/prsro'
   },
 ]
 
@@ -115,7 +143,7 @@ export const certifications = [
     name: 'CompTIA Security+',
     provider: 'CompTIA',
     status: 'planned',
-    description: 'Foundational cybersecurity certification covering network security and threats.',
+    description: 'Foundational cybersecurity certification covering network security, threats, and risk management.',
     targetDate: '2030'
   },
   {
@@ -129,8 +157,8 @@ export const certifications = [
     name: 'CompTIA Linux+',
     provider: 'CompTIA',
     status: 'planned',
-    description: 'Linux system administration and security fundamentals.',
-    targetDate: '2032'
+    description: 'Linux system administration, scripting, and security fundamentals.',
+    targetDate: '2031'
   },
   {
     name: 'OSCP',
@@ -144,54 +172,63 @@ export const certifications = [
 // Timeline data
 export const timeline = [
   {
-    period: 'Now',
-    title: 'Student & Self-Learner',
-    desc: 'Building foundations with Linux, networking, Python, and hands-on labs. Participating in CTFs and reading security research.'
+    period: 'Present',
+    title: 'Cybersecurity Student & Builder',
+    desc: 'Building real projects: crypto suites, physics engines, games, and full-stack platforms. Deep-diving into C++, reverse engineering, and offensive security.'
   },
   {
-    period: 'Next',
-    title: 'Certifications, CTF player & Labs',
-    desc: 'Planning: CompTIA Security+, eJPT, tryhackme/hackthebox pathways, and practical lab experience.'
+    period: 'Near',
+    title: 'Certifications & Advanced Tools',
+    desc: 'Working toward Security+, eJPT, and OSCP. Expanding the Obscuron ecosystem with production-ready tools and security research.'
   },
   {
     period: 'Future',
-    title: 'Cybersecurity Engineer / Researcher / SOC',
-    desc: 'Goal: Work in red teaming, penetration testing, or security research. Continuous learning and contributing to the community.'
+    title: 'Security Engineer / Tooling Developer',
+    desc: 'Goal: Red teaming, malware analysis, tool development, and contributing to the security community. Building things that matter.'
   },
 ]
 
 // Areas of interest
 export const interests = [
-  { icon: 'search', name: 'Digital Forensics' },
-  { icon: 'shield', name: 'Network Security' },
+  { icon: 'search', name: 'Reverse Engineering' },
+  { icon: 'shield', name: 'Cryptography' },
   { icon: 'bug', name: 'Malware Analysis' },
-  { icon: 'crosshair', name: 'Ethical Hacking' },
+  { icon: 'crosshair', name: 'Offensive Security' },
+  { icon: 'gamepad', name: 'Game Development' },
+  { icon: 'cpu', name: 'Systems Programming' },
 ]
 
 // Blog/Research section
 export const blogPosts = [
   {
-    title: 'Coming Soon',
-    category: 'Research',
-    excerpt: 'Security research and findings will be published here.',
-    date: 'TBD',
+    title: 'Building a Crypto Suite in C++/Qt6',
+    category: 'Dev Log',
+    excerpt: 'Lessons learned from building a 100+ command cryptographic toolkit with a Qt6 GUI, cryptanalysis tools, and AI-assisted solving.',
+    date: '2026',
     link: '#'
   },
   {
-    title: 'CTF Writeups',
+    title: 'CTF Writeups & Solutions',
     category: 'Writeups',
-    excerpt: 'Detailed solutions to Capture The Flag challenges.',
+    excerpt: 'Detailed solutions to Capture The Flag challenges covering crypto, reverse engineering, and exploitation.',
     date: 'TBD',
     link: '#'
   },
   {
-    title: 'Security Notes',
+    title: 'From Scratch: Physics Engine',
+    category: 'Dev Log',
+    excerpt: 'Building a 2D physics engine with SFML 3 — rigid body dynamics, collision detection, and rendering from zero dependencies.',
+    date: '2026',
+    link: '#'
+  },
+  {
+    title: 'Security Research Notes',
     category: 'Notes',
-    excerpt: 'Personal notes on tools, techniques, and learning resources.',
+    excerpt: 'Personal notes on tools, techniques, CVEs, and learning resources from labs and self-study.',
     date: 'TBD',
     link: '#'
   },
 ]
 
 // Project categories for filtering
-export const projectCategories = ['All', 'Game', 'Automation', 'Security', 'AI']
+export const projectCategories = ['All', 'Game Dev', 'Security', 'Web App', 'Tools']

@@ -24,14 +24,16 @@ export default function About({ skills }) {
             transition={{ delay: 0.2 }}
           >
             <p>
-              I'm a high school student at CNITV with a passion for cybersecurity, digital privacy and computer science. 
-              I believe in the power of anonymity, transparency, continuous learning, honesty and delivering results 
-              through disciplined work. My journey focuses on ethical hacking, automation, 
-              AI research, and building tools that make the digital world more secure.
+              I'm a high school student at CNITV building real software — from cryptographic suites 
+              and physics engines to full-stack platforms and strategy games. I work across C++, 
+              Python, React, Unity, and embedded systems, always digging into how things work 
+              at every layer of the stack.
             </p>
             <p>
-              Currently self-learning and taking notes while preparing for certifications 
-              in the cybersecurity and computer science field.
+              My projects span game development (Unity, SDL2, SFML), security tooling (crypto 
+              toolkits, CTF platforms), systems programming (physics engines, trading bots), 
+              and web applications (React, Fastify, PostgreSQL). Currently focused on 
+              deepening my C++ expertise and preparing for security certifications.
             </p>
           </motion.div>
 

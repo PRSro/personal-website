@@ -85,7 +85,7 @@ export default function Hero({ typedText, scrollTo }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
         >
-          High school student exploring cybersecurity, ethical hacking, automation, AI, and building anonymous digital projects.
+          High school student building cryptographic suites, physics engines, strategy games, and full-stack platforms. C++, Python, React, Unity — security through depth.
         </motion.p>
 
         <motion.div 

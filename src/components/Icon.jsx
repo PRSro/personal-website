@@ -107,6 +107,45 @@ const icons = {
       <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
     </svg>
   ),
+  cpp: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+    </svg>
+  ),
+  react: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
+      <circle cx="12" cy="12" r="2.5"/>
+      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(0 12 12)"/>
+      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/>
+      <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/>
+    </svg>
+  ),
+  unity: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
+      <path d="M12 2L2 7v10l10 5 10-5V7l-10-5zm0 2.2l7.4 3.7v7.4L12 19.2 4.6 15.3V7.9L12 4.2zM8 9.5l4 2.5 4-2.5v5l-4 2.5-4-2.5v-5z"/>
+    </svg>
+  ),
+  gamepad: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
+      <rect x="2" y="6" width="20" height="12" rx="3"/>
+      <circle cx="6" cy="12" r="1.5" fill="currentColor"/>
+      <circle cx="18" cy="12" r="1.5" fill="currentColor"/>
+      <circle cx="12" cy="10" r="1" fill="currentColor"/>
+      <circle cx="12" cy="14" r="1" fill="currentColor"/>
+    </svg>
+  ),
+  database: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="icon">
+      <ellipse cx="12" cy="5" rx="9" ry="3"/>
+      <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+      <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+    </svg>
+  ),
+  docker: (
+    <svg viewBox="0 0 24 24" fill="currentColor" className="icon">
+      <path d="M13.983 6.22v3.654h3.654V6.22h-3.654zm0 4.253v3.654h3.654v-3.654h-3.654zm-4.253 0v3.654h3.654v-3.654H9.73zm-4.254 0v3.654h3.655v-3.654H5.476zm0-4.253v3.654h3.655V6.22H5.476zm4.254 0v3.654h3.654V6.22H9.73zm8.507 4.253h3.654V6.22h-3.654v3.654zM23.19 9.565c-.792-1.062-2.236-1.418-3.217-1.418-.224-.67-.587-1.297-1.141-1.868l-.634-.657-.658.633c-1.162 1.123-1.559 2.826-1.437 4.122.049.497.195 1.029.478 1.53-.795.293-1.983.478-3.541.478H.873a.442.442 0 00-.442.439c0 2.27.666 4.267 1.975 5.935 1.2 1.529 2.932 2.565 5.106 3.064 2.15.488 4.737.488 7.32 0 2.537-.488 4.67-1.547 6.138-3.064 1.466-1.517 2.206-3.654 2.206-6.338 0-.17-.009-.34-.024-.509.883-.545 1.416-1.296 1.638-2.271l.108-.487-.479-.438z"/>
+    </svg>
+  ),
 }
 
 export default function Icon({ name, className }) {

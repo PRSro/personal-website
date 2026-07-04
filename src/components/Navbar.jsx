@@ -1,8 +1,17 @@
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 
 const navItems = ['home', 'about', 'projects', 'labs', 'certifications', 'blog', 'path', 'contact']
 
 export default function Navbar({ activeSection, navOpen, setNavOpen, scrollTo }) {
+  const [displayText, setDisplayText] = useState('Obscuron')
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setDisplayText(prev => prev === 'Obscuron' ? '0bZc8r0n' : 'Obscuron')
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
   return (
     <motion.nav 
       className="navbar"
@@ -17,7 +26,7 @@ export default function Navbar({ activeSection, navOpen, setNavOpen, scrollTo })
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
             </svg>
           </span>
-          <span>prs<span className="accent">/</span>Obscuron</span>
+          <span>prs<span className="accent">/</span>{displayText}</span>
         </a>
         
         <div className={`nav-links ${navOpen ? 'open' : ''}`}>

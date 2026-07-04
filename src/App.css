@@ -1,22 +1,22 @@
 :root {
-  --bg-primary: #030712;
-  --bg-secondary: #0a0f1a;
-  --bg-tertiary: #111827;
-  --bg-card: #0d1424;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --accent-cyan: #22d3ee;
-  --accent-cyan-dim: #0891b2;
-  --accent-purple: #a855f7;
-  --accent-purple-dim: #7c3aed;
-  --accent-blue: #3b82f6;
-  --accent-green: #22c55e;
-  --accent-glow-cyan: rgba(34, 211, 238, 0.4);
-  --accent-glow-purple: rgba(168, 85, 247, 0.4);
-  --border-color: #1e293b;
-  --border-glow: rgba(34, 211, 238, 0.3);
-  --gradient-main: linear-gradient(135deg, #22d3ee 0%, #a855f7 50%, #3b82f6 100%);
+  --bg-primary: #0e0d0b;
+  --bg-secondary: #141311;
+  --bg-tertiary: #1c1a17;
+  --bg-card: #100f0d;
+  --text-primary: #e2e0da;
+  --text-secondary: #8c8a82;
+  --text-muted: #5e5c56;
+  --accent-cyan: #7a9e6b;
+  --accent-cyan-dim: #5a7e4d;
+  --accent-purple: #9b8b7a;
+  --accent-purple-dim: #7a5ca8;
+  --accent-blue: #5b8cc9;
+  --accent-green: #7ba86a;
+  --accent-glow-cyan: rgba(122, 158, 107, 0.2);
+  --accent-glow-purple: rgba(122, 92, 168, 0.25);
+  --border-color: #28251e;
+  --border-glow: rgba(91, 140, 201, 0.2);
+  --gradient-main: linear-gradient(135deg, #7a9e6b 0%, #5b8cc9 50%, #7a5ca8 100%);
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
 }
 
@@ -96,7 +96,7 @@ body {
 
 .dot.red { background: #ef4444; }
 .dot.yellow { background: #eab308; }
-.dot.green { background: #22c55e; }
+.dot.green { background: var(--accent-green); }
 
 .terminal-header .title {
   margin-left: 12px;
@@ -443,7 +443,7 @@ body {
 }
 
 .btn-primary.sending { background: var(--accent-blue); }
-.btn-primary.sent { background: #22c55e; }
+.btn-primary.sent { background: var(--accent-green); }
 
 .scroll-indicator {
   position: absolute;
